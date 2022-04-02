@@ -33,6 +33,15 @@ export default {
     changeContent(number){
       this.contentNumber = number;
     }
+  },
+  created() {
+    fetch("https://www.fastmock.site/mock/0aee7559464fadc986c2e38e63492a86/spm/book/detail", {
+      "method": "GET"
+    })
+    .then(response => response.json())
+    .then(json => console.log(json))
+    .catch(err => console.log('Request Failed', err))
+    console.log(111);
   }
 }
 </script>
