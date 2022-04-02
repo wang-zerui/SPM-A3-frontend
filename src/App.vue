@@ -35,8 +35,8 @@
           </span>
         </div>
       </a-layout-header>
-      <a-layout-content :style="{ padding: '0 50px', marginTop: '64px', minHeight: '94vh' }">
-        <div :style="{ background: '#fff', padding: '20px', minHeight: '94vh',marginTop: '32px' }">
+      <a-layout-content :style="{ padding: '0 50px', marginTop: '64px', minHeight: '89vh' }">
+        <div :style="{ background: '#fff', padding: '20px', minHeight: '89vh',marginTop: '32px' }">
           <router-view />
         </div>
       </a-layout-content>

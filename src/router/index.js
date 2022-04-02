@@ -11,9 +11,8 @@ Vue.use(VueRouter)
  */
 const routes = [
     {
-        path: '/helloworld',
-        name: '测试页',
-        component: () => import('../components/HelloWorld.vue'),
+        path: '',
+        redirect: '/book/search'
     },
     {
         path: '/login',
@@ -27,7 +26,7 @@ const routes = [
     },
     {
         path: '/book',
-        component: () => import('../components/UserCenter.vue'),
+        redirect: '/book/search'
     },
     {
         path: '/book/search',
@@ -40,7 +39,7 @@ const routes = [
     {
         path: '/user',
         name: '用户页',
-        component: () => import('../components/User.vue'),
+        component: () => import('../components/user/UserCenter.vue'),
     },
     {
         path: '/user/borrowing',
